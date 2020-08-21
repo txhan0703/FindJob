@@ -1,4 +1,4 @@
-k次反转链表： 先算长度，建个头结点，p = curr.next;curr.next = p.next;p.next = prev.next;prev.next=p;
+k次反转链表： 先算长度，建个头结点，p = curr.next;curr.next = p.next;p.next = prev.next;prev.next=p;prev是新建的头结点。
 滑动窗口，HashMap里面可以存放最右边的字符的值
 LRU，用LinkedHashMap，每次访问删除当前key在最后添加key,map.remove(key),Iterator<Map.Entry<K,V>> it = map.entrySet().iterator();
 普通反转链表：q =p.next;p.next = newnode;newnode = p;p=q;return newnode;
